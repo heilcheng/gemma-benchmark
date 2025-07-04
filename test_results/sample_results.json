@@ -1,0 +1,44 @@
+{
+  "gpt2": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.45
+      },
+      "subjects": {
+        "mathematics": {
+          "accuracy": 0.42
+        },
+        "science": {
+          "accuracy": 0.48
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.35
+      },
+      "exact_match": 0.3
+    }
+  },
+  "gpt2-medium": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.52
+      },
+      "subjects": {
+        "mathematics": {
+          "accuracy": 0.49
+        },
+        "science": {
+          "accuracy": 0.55
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.42
+      },
+      "exact_match": 0.38
+    }
+  }
+}

@@ -1,0 +1,97 @@
+# Colab-friendly configuration for Gemma Benchmark Suite
+# This config uses the most recent open-weight models
+
+# Model Definitions
+models:
+  # Mistral Models
+  mistralai/Mistral-7B-v0.1:
+    type: "huggingface"
+    model_id: "mistralai/Mistral-7B-v0.1"
+    quantization: true
+    cache_dir: "cache/models"
+
+  # Qwen Models
+  Qwen/Qwen2-7B:
+    type: "huggingface"
+    model_id: "Qwen/Qwen2-7B"
+    quantization: true
+    cache_dir: "cache/models"
+
+  Qwen/Qwen2-1.5B:
+    type: "huggingface"
+    model_id: "Qwen/Qwen2-1.5B"
+    quantization: true
+    cache_dir: "cache/models"
+
+  # Microsoft Phi Models
+  microsoft/Phi-3-mini-4k-instruct:
+    type: "huggingface"
+    model_id: "microsoft/Phi-3-mini-4k-instruct"
+    quantization: true
+    cache_dir: "cache/models"
+
+  microsoft/Phi-2:
+    type: "huggingface"
+    model_id: "microsoft/Phi-2"
+    quantization: true
+    cache_dir: "cache/models"
+
+  # Meta Llama Models (require authentication)
+  meta-llama/Llama-2-7b-chat-hf:
+    type: "huggingface"
+    model_id: "meta-llama/Llama-2-7b-chat-hf"
+    quantization: true
+    cache_dir: "cache/models"
+
+  # Google Gemma Models (require authentication)
+  google/gemma-2b-it:
+    type: "huggingface"
+    model_id: "google/gemma-2b-it"
+    quantization: true
+    cache_dir: "cache/models"
+
+# Task Definitions
+tasks:
+  mmlu:
+    type: "mmlu"
+    subset: "mathematics"  # Use smaller subset for faster execution
+    shot_count: 5
+    temperature: 0.0
+
+  gsm8k:
+    type: "gsm8k"
+    shot_count: 5
+    use_chain_of_thought: true
+
+  humaneval:
+    type: "humaneval"
+    shot_count: 0
+    temperature: 0.2
+
+  arc:
+    type: "arc"
+    shot_count: 3
+    temperature: 0.0
+
+  truthfulqa:
+    type: "truthfulqa"
+    shot_count: 0
+    temperature: 0.0
+
+# Evaluation Settings
+evaluation:
+  runs: 1
+  batch_size: "auto"
+  statistical_tests: false
+
+# Output Settings
+output:
+  path: "results"
+  visualize: true
+  export_formats: ["json", "csv"]
+
+# Hardware Settings
+hardware:
+  device: "auto"
+  precision: "float16"
+  quantization: true 

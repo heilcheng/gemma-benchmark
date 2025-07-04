@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma-benchmark"
+version = "1.0.0"
+description = "A benchmarking framework for Google's Gemma models"
+readme = "README.md"
+authors = [{ name = "Hailey Cheng" }]
+license = { text = "MIT License" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "torch>=2.1.0,<3.0.0",
+    "transformers>=4.38.0",
+    "datasets>=2.15.0",
+    "accelerate>=0.27.0",
+    "bitsandbytes>=0.42.0",
+    "scipy>=1.7.0",
+    "PyYAML>=6.0",
+    "pydantic",
+    "tqdm>=4.60.0",
+    "pandas>=1.3.0",
+    "seaborn>=0.11.0",
+    "matplotlib>=3.4.0",
+    "psutil>=5.8.0",
+    "nvidia-ml-py3>=7.352.0",
+    "huggingface-hub>=0.16.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pre-commit",
+    "black==24.4.2",
+    "isort",
+    "flake8",
+    "mypy",
+    "pip-tools",
+    "numpy>=1.20.0"
+]
+
+[project.scripts]
+run-benchmark = "gemma_benchmark.scripts.run_benchmark:main"
+download-data = "gemma_benchmark.scripts.download_data:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+# FIX: Add this section to configure flake8 to agree with black
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"

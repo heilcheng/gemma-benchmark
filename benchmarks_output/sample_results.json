@@ -1,0 +1,227 @@
+{
+  "microsoft_Phi-3-mini-4k-instruct": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.65,
+        "total_questions": 100,
+        "correct_answers": 65
+      },
+      "categories": {
+        "mathematics": {
+          "accuracy": 0.72,
+          "total_questions": 25,
+          "correct_answers": 18
+        },
+        "science": {
+          "accuracy": 0.68,
+          "total_questions": 25,
+          "correct_answers": 17
+        },
+        "humanities": {
+          "accuracy": 0.60,
+          "total_questions": 25,
+          "correct_answers": 15
+        },
+        "social_sciences": {
+          "accuracy": 0.60,
+          "total_questions": 25,
+          "correct_answers": 15
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.52,
+        "total_questions": 50,
+        "correct_answers": 26
+      }
+    },
+    "humaneval": {
+      "overall": {
+        "pass_at_1": 0.28,
+        "total_questions": 100,
+        "correct_answers": 28
+      }
+    }
+  },
+  "microsoft_Phi-2": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.58,
+        "total_questions": 100,
+        "correct_answers": 58
+      },
+      "categories": {
+        "mathematics": {
+          "accuracy": 0.64,
+          "total_questions": 25,
+          "correct_answers": 16
+        },
+        "science": {
+          "accuracy": 0.60,
+          "total_questions": 25,
+          "correct_answers": 15
+        },
+        "humanities": {
+          "accuracy": 0.56,
+          "total_questions": 25,
+          "correct_answers": 14
+        },
+        "social_sciences": {
+          "accuracy": 0.52,
+          "total_questions": 25,
+          "correct_answers": 13
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.45,
+        "total_questions": 50,
+        "correct_answers": 22
+      }
+    },
+    "humaneval": {
+      "overall": {
+        "pass_at_1": 0.22,
+        "total_questions": 100,
+        "correct_answers": 22
+      }
+    }
+  },
+  "Qwen_Qwen2-1.5B": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.62,
+        "total_questions": 100,
+        "correct_answers": 62
+      },
+      "categories": {
+        "mathematics": {
+          "accuracy": 0.68,
+          "total_questions": 25,
+          "correct_answers": 17
+        },
+        "science": {
+          "accuracy": 0.64,
+          "total_questions": 25,
+          "correct_answers": 16
+        },
+        "humanities": {
+          "accuracy": 0.60,
+          "total_questions": 25,
+          "correct_answers": 15
+        },
+        "social_sciences": {
+          "accuracy": 0.56,
+          "total_questions": 25,
+          "correct_answers": 14
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.48,
+        "total_questions": 50,
+        "correct_answers": 24
+      }
+    },
+    "humaneval": {
+      "overall": {
+        "pass_at_1": 0.25,
+        "total_questions": 100,
+        "correct_answers": 25
+      }
+    }
+  },
+  "Qwen_Qwen2-7B": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.72,
+        "total_questions": 100,
+        "correct_answers": 72
+      },
+      "categories": {
+        "mathematics": {
+          "accuracy": 0.76,
+          "total_questions": 25,
+          "correct_answers": 19
+        },
+        "science": {
+          "accuracy": 0.72,
+          "total_questions": 25,
+          "correct_answers": 18
+        },
+        "humanities": {
+          "accuracy": 0.68,
+          "total_questions": 25,
+          "correct_answers": 17
+        },
+        "social_sciences": {
+          "accuracy": 0.72,
+          "total_questions": 25,
+          "correct_answers": 18
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.58,
+        "total_questions": 50,
+        "correct_answers": 29
+      }
+    },
+    "humaneval": {
+      "overall": {
+        "pass_at_1": 0.35,
+        "total_questions": 100,
+        "correct_answers": 35
+      }
+    }
+  },
+  "mistralai_Mistral-7B-v0.1": {
+    "mmlu": {
+      "overall": {
+        "accuracy": 0.68,
+        "total_questions": 100,
+        "correct_answers": 68
+      },
+      "categories": {
+        "mathematics": {
+          "accuracy": 0.72,
+          "total_questions": 25,
+          "correct_answers": 18
+        },
+        "science": {
+          "accuracy": 0.68,
+          "total_questions": 25,
+          "correct_answers": 17
+        },
+        "humanities": {
+          "accuracy": 0.64,
+          "total_questions": 25,
+          "correct_answers": 16
+        },
+        "social_sciences": {
+          "accuracy": 0.68,
+          "total_questions": 25,
+          "correct_answers": 17
+        }
+      }
+    },
+    "gsm8k": {
+      "overall": {
+        "accuracy": 0.55,
+        "total_questions": 50,
+        "correct_answers": 27
+      }
+    },
+    "humaneval": {
+      "overall": {
+        "pass_at_1": 0.32,
+        "total_questions": 100,
+        "correct_answers": 32
+      }
+    }
+  }
+} 
