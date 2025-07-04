@@ -95,6 +95,10 @@ streamlit run visualize/dashboard.py
 
 This will launch the dashboard in your web browser.
 
+![Screenshot 2025-07-05 at 3 01 35 am](https://github.com/user-attachments/assets/61254e80-e4e5-43ec-a490-e4b8d435ae4e)
+
+![Screenshot 2025-07-05 at 3 01 56 am](https://github.com/user-attachments/assets/d888de70-9449-44b8-82ef-228108a3ee26)
+
 ## 📋 Prerequisites
 
 ### Hardware Requirements
